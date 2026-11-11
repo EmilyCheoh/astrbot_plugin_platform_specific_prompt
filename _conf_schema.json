@@ -1,0 +1,498 @@
+{
+  "initial_context_count": {
+    "description": "预设消息数",
+    "hint": "首轮模式：len(req.contexts) <= 此值时注入；通常填 2。",
+    "type": "int",
+    "default": 2
+  },
+  "slot_1": {
+    "description": "Slot 1",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_2": {
+    "description": "Slot 2",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_3": {
+    "description": "Slot 3",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_4": {
+    "description": "Slot 4",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_5": {
+    "description": "Slot 5",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_6": {
+    "description": "Slot 6",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_7": {
+    "description": "Slot 7",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_8": {
+    "description": "Slot 8",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_9": {
+    "description": "Slot 9",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  },
+  "slot_10": {
+    "description": "Slot 10",
+    "hint": "QQ 和小窝自由分配。",
+    "type": "object",
+    "items": {
+      "remark": {
+        "description": "备注名称",
+        "type": "string",
+        "default": ""
+      },
+      "enabled": {
+        "description": "启用",
+        "type": "bool",
+        "default": false
+      },
+      "platform": {
+        "description": "平台",
+        "type": "string",
+        "default": "den",
+        "options": [
+          "den",
+          "qq"
+        ]
+      },
+      "injection_position": {
+        "description": "注入位置",
+        "hint": "first_message 只在新窗口首轮前置；system_prompt 每轮附加；before/after 每轮清理并重新注入。",
+        "type": "string",
+        "default": "system_prompt",
+        "options": [
+          "system_prompt",
+          "first_message",
+          "user_message_before",
+          "user_message_after"
+        ]
+      },
+      "tag_name": {
+        "description": "标签名称",
+        "hint": "例如 DenRules（不加尖括号）；不同 Slot / 旧插件勿重名。",
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "description": "内容",
+        "type": "text",
+        "default": ""
+      }
+    }
+  }
+}

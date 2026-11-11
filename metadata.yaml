@@ -1,0 +1,6 @@
+name: astrbot_plugin_platform_specific_prompt
+display_name: "🐈‍⬛ PlatformPrompt 平台专属提示词"
+description: QQ / Den 平台专属提示词槽，支持首轮或每轮注入。
+version: 1.0.0
+author: Felis Abyssalis
+repo: "https://github.com/EmilyCheoh/astrbot_plugin_platform_specific_prompt"
