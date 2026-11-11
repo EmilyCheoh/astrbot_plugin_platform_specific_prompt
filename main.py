@@ -64,7 +64,7 @@ class PlatformPrompt(Star):
                     "platform": str(raw.get("platform", "den") or "").strip().lower(),
                     "position": str(raw.get("injection_position", "system_prompt") or "").strip(),
                     "tag_name": str(raw.get("tag_name", "") or "").strip(),
-                    "content": str(raw.get("content", "") or "").strip(),
+                    "content": str(raw.get("content", "") or "").replace("\\n", "\n").strip(),
                 }
             )
         return result
